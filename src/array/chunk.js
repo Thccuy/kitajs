@@ -1,4 +1,4 @@
-function chunk(arr,size=1) {
+export default function chunk(arr,size=1) {
     const length = arr.length;
     const chunksCount = Math.round(length / size);
     const res = []
