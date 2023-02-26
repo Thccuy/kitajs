@@ -1,10 +1,10 @@
-export default function bfs(root,cb = (curNode) => {}) {
+export default function bfs(root,childrenProp="children",cb = (curNode) => {}) {
     const queue = [root];
     const visited = new Map();
 
     while (queue.length) {
         const curNode = queue.shift();
-        const children = curNode.children;
+        const children = curNode[childrenProp];
         cb(curNode);
 
         if(children) {

@@ -1,9 +1,9 @@
-export default function dfs(root,cb) {
+export default function dfs(root,childrenProp="children",cb) {
     const stack = [root];
 
     while(stack.length) {
         const curNode = stack.pop();
-        const children = curNode.children;
+        const children = curNode[childrenProp];
         cb(curNode);
 
         if(children) {
