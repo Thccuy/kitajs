@@ -1,6 +1,6 @@
 import isArrayLike from "../utils/isArrayLike";
 
-function arrayLike2Array(arrLike) {
+export default function arrayLike2Array(arrLike) {
     const res = [];
 
     if(Array.isArray(arrLike)) {
