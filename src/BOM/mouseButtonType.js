@@ -1,4 +1,4 @@
-export default function mouseClickType(e) {
+export default function mouseButtonType(e) {
     const types = ['left','middle','right']
 
     if(e.which) {
