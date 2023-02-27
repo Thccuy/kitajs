@@ -1,6 +1,6 @@
 import isObject from "../utils/isObject";
 
-function deepClone(obj) {
+export default function deepClone(obj) {
     const res = Array.isArray(obj) ? []:{};
 
     if(isObject(obj)) {
