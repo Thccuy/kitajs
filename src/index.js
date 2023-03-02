@@ -1,0 +1,1 @@
+const Tip = "Here is the index files"
